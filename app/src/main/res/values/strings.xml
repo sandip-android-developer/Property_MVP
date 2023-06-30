@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RadiusAgentProject</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+    <string name="you_can_t_select_this_option">You can\'t select this option</string>
+</resources>

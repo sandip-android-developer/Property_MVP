@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="option"
+            type="com.example.radiusagentproject.repository.remote.model.Option" />
+
+    </data>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtObject_SelectItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:customDrawableIcon="@{option.icon}"
+            android:text="@{option.name}"
+            android:gravity="center_vertical"
+            android:layout_toStartOf="@id/cbObject_SelectItem"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" />
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/cbObject_SelectItem"
+            android:layout_width="@dimen/margin_18"
+            android:layout_height="@dimen/margin_18"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_rectangle_white"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+</layout>
